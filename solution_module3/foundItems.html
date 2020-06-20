@@ -1,0 +1,7 @@
+<h3>The founded items</h3>
+<ol>
+<li ng-repeat="item in list.menu">
+  {{ item.name }} <b>: {{ item.short_name}}</b> : {{ item.description }}
+  <button ng-click="list.removeItem($index);">Don't want this one!</button>
+</li>
+</ol>
