@@ -1,0 +1,16 @@
+<div ng-if="reg.fehler !== true">
+  <span>First name:</span><span>{{ reg.fname }}</span><br/>
+  <span>Second name:</span><span>{{ reg.sname }}</span><br/>
+  <span>Email:</span><span>{{ reg.email }}</span><br/>
+  <span>Phone:</span><span>{{ reg.phone }}</span><br/>
+  <span>Desired Item:</span><span>{{ reg.result.name }}</span><br/>
+  <span>Desired Item Description:</span><span>{{ reg.result.description }}</span><br/>
+
+  <img class="img-responsive" width="250" height="150" ng-src="{{reg.basePath}}/images/{{reg.result.short_name}}.jpg" alt="{{reg.result.name}}">
+</div>
+
+
+<div ng-if="reg.fehler">
+  Not Signed Up Yet. Sign up Now! 
+  <a ui-sref="public.signup">Here</a>
+</div>

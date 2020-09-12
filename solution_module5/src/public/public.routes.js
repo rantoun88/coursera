@@ -19,6 +19,18 @@ function routeConfig ($stateProvider) {
       url: '/',
       templateUrl: 'src/public/home/home.html'
     })
+    .state('public.signup', {
+      url: '/signup',
+      templateUrl: 'src/public/signup/sign-up.html',
+      controller: 'SignUpController',
+      controllerAs: 'reg',
+    })
+    .state('public.info', {
+      url: '/info',
+      templateUrl: 'src/public/info/info.html',
+      controller: 'InfoController',
+      controllerAs: 'reg',
+    })
     .state('public.menu', {
       url: '/menu',
       templateUrl: 'src/public/menu/menu.html',

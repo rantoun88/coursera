@@ -4,6 +4,11 @@
   border: 2px solid #3F0C1F;
 }
 
+.messageRes{
+  font-style: greenyellow;
+  font-size: xx-large;
+}
+
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
